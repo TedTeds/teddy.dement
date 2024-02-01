@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Teddy Dement</title>
+    <!-- CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <h1> <a class="navbar-brand" href="index.html">Teddy Dement</a></h1> -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid d-flex justify-content-between">
+            <button class="navbar-toggler custom-toggler order-2 order-lg-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <h1 class="order-1 order-lg-2"> <a class="navbar-brand links-end text-center bounce-opacity" href="index.html">Teddy Dement</a></h1>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end order-3" id="navbarNav">
+                <ul class="navbar-nav" >
+                    <li class="links" style="color: inherit;">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="links">
+                        <a class="nav-link" href="#projets">Portfolio</a>
+                    </li>
+                    <li class="links">
+                        <a class="nav-link" href="#skils">Mes skils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary btn-sm" href="#contact" style="color:white;">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <input type="checkbox" id="dark-light-mode" onclick="changeDarkMode()">
+                        <label for="dark-light-mode">Dark mode</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="text-center" style="color: rgba(112, 83, 1, 0.548);">Développeur Web & Mobile Full Stack</h1>
+
+    <header>
+        <div class="header-left">
+            <div class="text-center" style="margin-bottom: 80px;">
+                <a href="https://www.google.com/maps/place/Bondoufle/@48.6154845,2.3795455,14z/data=!3m1!4b1!4m6!3m5!1s0x47e5de82557c0995:0xc81b7a1af23c2138!8m2!3d48.612707!4d2.376663!16s%2Fm%2F03mgcpm?entry=ttu"
+                    target="_blank">
+                    <h4 class="links-end text-center "><span class="material-symbols-outlined">
+                            home_pin
+                        </span>Bondoufle / Paris</h4>
+                </a>
+                <h1 id="welcome" class="text-center">Bienvenue sur mon <span id="typed-text"></span><span
+                        id="cursor">|</span></h1>
+            </div>
+
+            <!-- liens  -->
+            <div class="links text-center">
+                <a href="mailto:Teddy.dmt@outlook.com" target="_blank"> Email <span class="material-symbols-outlined">
+                        call_made
+                    </span></a>
+                <a href="https://www.linkedin.com/in/teddy-dement-83723a143" target="_blank"> LinkedIn <span
+                        class="material-symbols-outlined">
+                        call_made
+                    </span></a>
+                <a href="img/CV_Teddy.DEMENT_developpeurWeb_photo.pdf" target="_blank"> Curriculum <span
+                        class="material-symbols-outlined">
+                        call_made
+                    </span></a>
+            </div>
+        </div>
+
+        <!-- photo -->
+        <div class="box">
+            <div class="header-right">
+                <img src="img/photo cv noir.png" alt="Photo de profil">
+            </div>
+        </div>
+    </header>
+
+    <!-- a propos -->
+    <section id="about" class="about" style="margin-bottom: 150px;" >
+        <h2>À propos de moi</h2>
+        <h5 class="text-center">Je m'appelle Teddy, Développeur web Full Stack de 29 ans</h5>
+        <p class="text-center">
+            J’ai débuté mon apprentissage en autodidacte, avant de finalement avoir eu la chance d’intégrer la formation
+            “Développeur Web & Mobile” de NextFormation. Ces 6 mois de formation ainsi que mes 3 mois en stage m’ont
+            permis de construire des bases solides, d’apprendre les bonnes pratiques et d’acquérir la bonne méthodologie
+            pour pouvoir continuer de progresser. J’ai créé ce portfolio afin de vous exposer mes compétences ainsi que
+            mes différents travaux. <br>
+            Je suis ouvert aux opportunités d'apprentissge ou d'emploi dans le domaine du développement web.
+        </p>
+    </section>
+    <div style="height: 200px;"></div>
+    <!-- mes projets -->
+    <section id="projets" class="images">
+        <h2 class="text-center" style="margin-bottom: 50px; margin-top: 100px;">Mes projets</h2>
+
+        <div class="image-card text-center">
+            <div class="image-left">
+                <img src="img/portfolio/autoloc/bbbb.png" alt="Autoloc">
+                <!-- Bouton pour ouvrir le modal -->
+                <a href="#" class="btn btn-primary" style="margin-top: 7px; border: none;" data-toggle="modal"
+                    data-target="#myModal">Voir plus</a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <!-- Carrousel -->
+                                <div class="d-flex flex-column-reverse flex-md-row">
+                                <div class="order-2 order-md-1">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-interval="false">
+                                            <img src="img/portfolio/autoloc/acceuil1.png"
+                                                class="d-block w-100 img-fluid" class="d-block img-fluid"
+                                                style="object-fit: contain; width: 100%; height: auto;" alt="Autoloc">
+                                        </div>
+                                        <div class="carousel-item" data-interval="false">
+                                            <img src="img/portfolio/autoloc/vehiculesearch.png"
+                                                class="d-block img-fluid"
+                                                style="object-fit: contain; width: 100%; height: auto;" alt="Image 2">
+                                        </div>
+                                        <div class="carousel-item" data-interval="false">
+                                            <img src="img/portfolio/autoloc/resajour.png" class="d-block img-fluid"
+                                                style="object-fit: contain; width: 100%; height: auto;" alt="Image 3">
+                                        </div>
+                                        <div class="carousel-item" data-interval="false">
+                                            <img src="img/portfolio/autoloc/geston des vehicules.png"
+                                                class="d-block img-fluid"
+                                                style="object-fit: contain; width: 100%; height: auto;" alt="Image 4">
+                                        </div>
+                                        <div class="carousel-item" data-interval="false">
+                                            <img src="img/portfolio/autoloc/figma mobile.png" class="d-block img-fluid"
+                                                style="object-fit: contain; width: 100%; height: auto;" alt="Image 4">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <!-- <span class="sr-only">Précédent</span> -->
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <!-- <span class="sr-only">Suivant</span> -->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="image-right text-center">
+                <h4>AutoLoc</h4>
+                <p>Autoloc représente une plateforme en ligne dédiée à la location de véhicules, élaborée dans le but de
+                    rendre le processus de location plus accessible aux utilisateurs. Il s'agit d'un projet que j'ai
+                    développé de manière indépendante tout au long de ma formation. <br> Lors de ma soutenance pour
+                    l'obtention de mon diplôme, Autoloc a été présenté comme une réalisation significative de mon
+                    parcours. <br><strong> Langage : PHP, Symfony, MySQL, HTML, CSS, JavaScript, Figma</strong>
+                </p>
+            </div>
+        </div>
+        <!-- 2eme projet -->
+        <section class="images">
+            <div class="image-card text-center">
+                <div class="image-left">
+                    <img src="img/portfolio/siteLebondev/lebondev1.png" alt="LeBonDev">
+                    <!-- Bouton pour ouvrir le modal -->
+                    <a href="#" class="btn btn-primary" style="margin-top: 7px; border: none;" data-toggle="modal"
+                        data-target="#myModal2">Voir plus</a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <!-- Carrousel -->
+                                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-interval="false">
+                                                <img src="img/portfolio/siteLebondev/lebondev2.png"
+                                                    class="d-block img-fluid"
+                                                    style="object-fit: contain; width: 100%; height: auto;"
+                                                    alt="Lebondev">
+                                            </div>
+                                            <div class="carousel-item" data-interval="false">
+                                                <img src="img/portfolio/siteLebondev/lebondevresulta.png"
+                                                    class="d-block img-fluid"
+                                                    style="object-fit: contain; width: 100%; height: auto;"
+                                                    alt="Image 2">
+                                            </div>
+                                            <div class="carousel-item" data-interval="false">
+                                                <img src="img/portfolio/siteLebondev/lebondevresulta2.png"
+                                                    class="d-block img-fluid"
+                                                    style="object-fit: contain; width: 100%; height: auto;"
+                                                    alt="Image 3">
+                                            </div>
+                                            <div class="carousel-item" data-interval="false">
+                                                <img src="img/portfolio/siteLebondev/lebondevresulta3.png"
+                                                    class="d-block img-fluid"
+                                                    style="object-fit: contain; width: 100%; height: auto;"
+                                                    alt="Image 4">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators2"
+                                            role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <!-- <span class="sr-only">Précédent</span> -->
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators2"
+                                            role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <!-- <span class="sr-only">Suivant</span> -->
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-right text-center">
+                    <h4>Le Bon Dev</h4>
+                    <p>J'ai développé un site permettant aux utilisateurs de rechercher des développeurs web en fonction
+                        de leurs compétences linguistiques. Ce site propose également une fonctionnalité de test. Les
+                        utilisateurs peuvent passer un test composé de plusieurs questions pour déterminer leurs besoins
+                        spécifiques. À la fin du test, l'application suggère un nombre approprié de développeurs
+                        freelances en fonction des réponses fournies. <br><strong> Langage : ReactJs, NodeJs, Express,
+                            HTML, CSS, JavaScript</strong>
+                    </p>
+                </div>
+            </div>
+            <section class="images">
+                <div class="image-card text-center">
+                    <div class="image-left">
+                        <img src="img/portfolio/siteMaisonJungle/cover.png" alt="LaMaisonJungle">
+                        <!-- Bouton pour ouvrir le modal -->
+                        <a href="#" class="btn btn-primary" style="margin-top: 7px; border: none;" data-toggle="modal"
+                            data-target="#myModal3">Voir plus</a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl" role="document">
+                                <!-- Ajoutez ici modal-lg ou modal-xl -->
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <!-- Carrousel -->
+                                        <div id="carouselExampleIndicators3" class="carousel slide"
+                                            data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active" data-interval="false">
+                                                    <img src="img/portfolio/siteMaisonJungle/cover.png"
+                                                        class="d-block img-fluid"
+                                                        style="object-fit: contain; width: 100%; height: auto;"
+                                                        alt="LaMaisonJungle">
+                                                </div>
+                                                <div class="carousel-item" data-interval="false">
+                                                    <img src="img/portfolio/siteMaisonJungle/categorie.png"
+                                                        class="d-block img-fluid"
+                                                        style="object-fit: contain; width: 100%; height: auto;"
+                                                        alt="Image 2">
+                                                </div>
+                                                <div class="carousel-item" data-interval="false">
+                                                    <img src="img/portfolio/siteMaisonJungle/paniermobile2.png"
+                                                        class="d-block img-fluid"
+                                                        style="object-fit: contain; width: 100%; height: auto;"
+                                                        alt="Image 3">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleIndicators3"
+                                                role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <!-- <span class="sr-only">Précédent</span> -->
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleIndicators3"
+                                                role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <!-- <span class="sr-only">Suivant</span> -->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-right text-center">
+                        <h4>La Maison Jungle</h4>
+                        <p>J'ai conçu un site dédié à la vente de plantes, élaboré dans le cadre d'un exercice sur
+                            OpenClassroom dans le but de renforcer mes compétences en développement web. Ce projet
+                            propose une expérience utilisateur, permettant aux visiteurs d'explorer une gamme de plantes
+                            et de les ajouter facilement à leur panier d'achats. Une fonctionnalité de tri par catégorie
+                            facilite la recherche de plantes spécifiques, offrant ainsi une navigation intuitive.
+                            <br><strong> Langage : ReactJs, HTML, CSS, JavaScript</strong>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Card skils  -->
+            <section id="skils" class="skils ">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Hard Skills</h5>
+                                <div class="row text-center">
+                                    <div class="col">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">HTML</li>
+                                            <li class="list-group-item">CSS</li>
+                                            <li class="list-group-item">JavaScript</li>
+                                            <li class="list-group-item">PHP</li>
+                                            <li class="list-group-item">Figma</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Symfony</li>
+                                            <li class="list-group-item">React</li>
+                                            <li class="list-group-item">NestJs</li>
+                                            <li class="list-group-item">TypeScript</li>
+                                            <li class="list-group-item">Canva</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- certification -->
+            <section id="certification" class="text-center">
+                <h2>Certification</h2>
+                <img src="img/OPQUAST-CERTIFICAT-MQW-fr-CSY2QZ-20230925_page-0001.jpg" class="img-thumbnail" 
+                    data-toggle="modal" data-target="#imageModal" style="width: 500px; border-radius: 50px; ">
+                <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <img src="img/OPQUAST-CERTIFICAT-MQW-fr-CSY2QZ-20230925_page-0001.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </section>
+
+            <!-- FOrmulaire -->
+            <section id="contact" class="contact">
+                <div class="text-center">
+                    <h2 class="links-end text-center bounce-opacity">Contactez-moi</h2>
+
+                    <a href="mailto:Teddy.dmt@outlook.com" target="_blank">
+                        <p> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-envelope-at email-icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />
+                                <a href="mailto:Teddy.dmt@outlook.com" target="_blank">
+                                    <path
+                                        d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                            </svg>Teddy.dmt@outlook.com</p>
+                    </a>
+                </div>
+                <form method="POST" action="https://submit-form.com/zmXSm5rEw">
+                    <div class="form-group">
+                        <label for="name">Nom et prénom / Société: *</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email: *</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Objet:</label>
+                        <input class="form-control" name="objet">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message: *</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group d-flex justify-content-center mt-3">
+                        <button type="submit" class="btn btn-primary btn-lg " style="border: none;">Envoyer</button>
+                    </div>
+                </form>
+            </section>
+
+            <footer class="footer-center"
+                style="display: flex; flex-direction: column; align-items: center; margin-top: 100px;">
+                <p>&copy; Copyright 2024 | Teddy Dement</p>
+                <div class="links-end text-center" style="display: flex; justify-content: center; margin-top: 10px;">
+                    <a href="https://www.linkedin.com/in/teddy-dement-83723a143" target="_blank" class="icon"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg></a>
+                    <a href="img/CV_Teddy.DEMENT_developpeurWeb_photo.pdf" target="_blank" class="icon"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-file-earmark-pdf" viewBox="0 0 16 16">
+                            <path
+                                d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+                            <path
+                                d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/TedTeds" target="_blank" class="links"> <svg
+                            xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                        </svg></a>
+                </div>
+            </footer>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Haut de page</button>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
